@@ -1,4 +1,4 @@
-package sx.nineer.mybatisplusdemo.base;
+package sx.nineer.mybatisplusdemo.util;
 
 
 import lombok.Data;
