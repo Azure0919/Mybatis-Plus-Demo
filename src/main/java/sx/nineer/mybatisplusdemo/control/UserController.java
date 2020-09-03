@@ -78,7 +78,6 @@ public class UserController {
      */
     @RequestMapping(value = "/saveUser",method = RequestMethod.POST)
     public Result<User> saveUser(@Validated User user){
-        //为了发送请求方便将user对象赋值写在代码,正常开发前端发送数据
         boolean flag = userBpo.save(user);
         if(flag){
            return ResultUtil.success("添加成功");
@@ -93,7 +92,6 @@ public class UserController {
      */
     @RequestMapping(value = "/delUser",method = RequestMethod.DELETE)
     public Result<User> delUser(Integer id){
-        //为了发送请求方便将user对象赋值写在代码,正常开发前端发送数据
         boolean flag = userBpo.removeById(id);
         if(flag){
             return ResultUtil.success("删除成功");
