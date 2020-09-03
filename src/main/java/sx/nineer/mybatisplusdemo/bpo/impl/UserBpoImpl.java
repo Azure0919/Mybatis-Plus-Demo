@@ -20,6 +20,7 @@ public class UserBpoImpl implements UserBpo {
     @Autowired
     private UserMapper userMapper;
 
+
     @Override
     public List<User> getAll() {
         return userMapper.selectList(null);
